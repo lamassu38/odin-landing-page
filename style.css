@@ -3,7 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav {
+.container {
+    padding: 0 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 12px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.navbar {
     padding: 12px;
 }
 ul {
@@ -16,4 +26,36 @@ ul {
 }
 .logo {
     margin-right: auto;
+}
+.header {
+    display: flex;
+    padding: 12px;
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.photos .container {
+    display: flex;
+    flex-direction: row;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.action {
+    display: flex;
+    padding: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
 }
