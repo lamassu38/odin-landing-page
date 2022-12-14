@@ -1,61 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    padding: 0 1em;
-    max-width: 600px;
-    margin: 0 auto;
-    gap: 12px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
-.navbar {
-    padding: 12px;
+h1,
+h2,
+.quote {
+    font-weight: 900;
+    line-height: 1;
 }
-ul {
-    list-style-type: none;
-    align-items: baseline;
-    padding: 0px;
-    margin: 0px;
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+.text-center {
+    text-align: center;
+}
+.main.container,
+section {
+    padding: 3rem 0;
+}
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
     display: flex;
-    gap: 12px;
+    flex-direction: column;
 }
+
+@media (min-width: 40rem){
+    .split {
+        flex-direction: row;
+    }
+    .split > * {
+        flex-basis: 100%;
+        margin-right: 2em;
+    }
+}
+.bg-header {
+    color: #F9FAF8;
+    background-color: #bb0bbbf7;
+}
+
 .logo {
     margin-right: auto;
-}
-.header {
+    font-size: 24px;
+} 
+ul {
     display: flex;
-    padding: 12px;
+    list-style-type: none;
+    gap: 20px;
+    margin-top: 12px;
 }
-.photos {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
+nav a:hover{
+    color: lightpink;
 }
-.photos .container {
-    display: flex;
-    flex-direction: row;
+nav a {
+    color: #F9FAF8;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li,
+.main.container p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+h1 {
+    color: #F9FAF8;
+    font-weight: bolder;
+    font-size: 48px;
+}
+button {
+    color: #F9FAF8;
+    background-color: #3882f6;
+    margin-top: 12px;
+    width: 150px;
+    padding: 7px;
+    border-radius: 0.5rem;
+    border-color: #3882f6;
+}
+.bg-quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
 }
 .quote {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    justify-content: space-evenly;
-    align-items: center;
+    font-size: 26px;
 }
-.action {
-    display: flex;
-    padding: 12px;
-    justify-content: space-evenly;
-    align-items: center;
+.autor {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
 }
-.footer {
-    display: flex;
-    justify-content: center;
+.action.container {
+    background-color: #387ef7;
+    color: #F9FAF8;
+    border-radius: 12px;
+    padding: 20px;
+}
+footer {
+    text-align: center;
 }
