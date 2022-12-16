@@ -126,6 +126,9 @@ button {
 .action.container :first-child {
     flex: 0 0 auto;
 }
+.right-aling {
+    text-align: right;
+}
 footer {
     text-align: center;
     padding: 12px;
